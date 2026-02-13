@@ -3,12 +3,12 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Sprečavanje phishing napada</title>
+        <title>PhishGuard</title>
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
             rel="stylesheet"
         />
-        <link href="styles.css" rel="stylesheet" />
+        <link href="/assets/styles.css" rel="stylesheet" />
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -18,8 +18,7 @@
                     alt="PhishGuard logo"
                     width="32"
                 />
-                <a class="navbar-brand" href="index.html">PhishGuard</a>
-
+                <a class="navbar-brand" href="index.html"> PhishGuard</a>
                 <button
                     class="navbar-toggler"
                     type="button"
@@ -32,7 +31,9 @@
                 <div class="collapse navbar-collapse" id="navMain">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link active" href="index.html"
+                                >Home</a
+                            >
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="what-is-phishing.html"
@@ -50,7 +51,7 @@
                             >
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="prevention.html"
+                            <a class="nav-link" href="prevention.html"
                                 >Prevention</a
                             >
                         </li>
@@ -66,7 +67,6 @@
                         class="btn btn-outline-light btn-sm"
                         type="button"
                         id="translateBtn"
-                        aria-label="Prevedi sadržaj"
                     >
                         SR/EN
                     </button>
@@ -76,78 +76,77 @@
 
         <main class="container py-4">
             <div class="hero mb-4">
-                <h1 class="mb-2">Sprečavanje phishing napada</h1>
-                <p class="text-muted mb-0">
-                    Evo nekoliko praktičnih koraka koje možete preduzeti da se
-                    zaštitite od napada phishing-a:
+                <span class="badge badge-soft mb-2"
+                    >Edukacija • Bezbednost • Prevencija</span
+                >
+                <h1 class="display-6 mb-2" data-i18n="home.title">
+                    Prepoznaj phishing pre nego što prepozna tebe.
+                </h1>
+                <p class="text-muted mb-3" data-i18n="home.lead">
+                    Nauči kako phishing funkcioniše, vidi primere iz prakse i
+                    usvoji navike koje štite tvoje naloge.
                 </p>
+                <div class="d-flex flex-wrap gap-2">
+                    <a class="btn btn-primary" href="what-is-phishing.html"
+                        >Kreni sa učenjem</a
+                    >
+                    <a class="btn btn-outline-light" href="prevention.html"
+                        >Lista prevencije</a
+                    >
+                    <a class="btn btn-outline-light" href="real-examples.html"
+                        >Vidi primere</a
+                    >
+                </div>
             </div>
 
             <div class="row g-3">
-                <div class="col-lg-6">
+                <div class="col-md-4">
                     <div class="card p-4 h-100">
-                        <h5>Prepoznajte znakove</h5>
-                        <p>
-                            Primeri uključuju nepoznate pozdrave, nepoželjne
-                            poruke, gramatičke i pravopisne greške, osećaj
-                            hitnosti, sumnjive veze ili priloge i zahteve za
-                            ličnim podacima.
+                        <h5>Šta je phishing?</h5>
+                        <p class="text-muted">
+                            Objašnjenje, vrste napada i zašto ljudi “nasednu”.
                         </p>
+                        <a
+                            class="btn btn-sm btn-primary"
+                            href="what-is-phishing.html"
+                            >Otvori</a
+                        >
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-md-4">
                     <div class="card p-4 h-100">
-                        <h5>Prijavite sve sumnjivo</h5>
-                        <p>
-                            Prijavite sumnjive poruke IT odeljenju vaše
-                            organizacije ili ih označite putem predviđenih
-                            alatki za prijavu.
+                        <h5>Stvarni primeri</h5>
+                        <p class="text-muted">
+                            Email, SMS i lažne login stranice — kako da ih
+                            prepoznaš.
                         </p>
+                        <a
+                            class="btn btn-sm btn-primary"
+                            href="real-examples.html"
+                            >Otvori</a
+                        >
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-md-4">
                     <div class="card p-4 h-100">
-                        <h5>Instalirajte bezbednosni softver</h5>
-                        <p>
-                            Primenite softver dizajniran za otkrivanje i
-                            blokiranje pokušaja phishing-a, kao što su
-                            antivirusni programi ili zaštitni zidovi.
+                        <h5>Najnovije informacije o napadima</h5>
+                        <p class="text-muted">
+                            Ovde mozete pogledati najnovije informacije o
+                            phishing napadima.
                         </p>
+                        <a class="btn btn-sm btn-primary" href="api-data.html"
+                            >Otvori</a
+                        >
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="card p-4 h-100">
-                        <h5>Zahtevajte višestruku potvrdu identiteta(MFA)</h5>
-                        <p>
-                            Ovaj korak dodaje dodatni sloj bezbednosti. Idite
-                            još dalje sa MFA otpornim na phishing (PR-MFA), koji
-                            štiti od socijalnog inženjeringa.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card p-4 mt-3">
-                <h5>Ostanite informisani kroz obrazovanje i obuku</h5>
-                <p class="text-muted mb-0">
-                    Redovne obuke mogu pomoći vama i vašim kolegama da
-                    prepoznate i prijavite pokušaje phishing-a putem pravih
-                    kanala. Metode napada se stalno razvijaju, zato je najbolje
-                    biti u toku sa aktuelnim trendovima u kibernetičkog
-                    bezbednosti i ažuriranjima obaveštenja o pretnjama.
-                </p>
             </div>
 
             <div class="d-flex justify-content-between mt-3">
-                <a class="text-decoration-none" href="api-data.html"
-                    >← Prethodna</a
-                >
-                <a class="text-decoration-none" href="contact.html"
+                <span class="text-muted">← Prethodna</span>
+                <a class="text-decoration-none" href="what-is-phishing.html"
                     >Sledeća →</a
                 >
             </div>
-
-            <!-- TODO: translateBtn -->
         </main>
 
         <footer class="site-footer">
@@ -171,6 +170,7 @@
 
             <div class="container footer-bottom">© 2026 PhishGuard</div>
         </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/script.js"></script>
 </html>
