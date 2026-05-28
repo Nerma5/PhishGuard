@@ -1,12 +1,21 @@
-fetch("https://api.phishstats.info/api/phishing")
-    .then((response) => response.json())
-    .then((data) => {
+const proxyUrl = "https://api.allorigins.win/get?url=";
+const apiUrl = encodeURIComponent("https://api.phishstats.info/api/phishing");
+
+fetch(`${proxyUrl}${apiUrl}`)
+    .then((response) => {
+        if (response.ok) return response.json();
+        throw new Error("Mrežni odgovor nije bio u redu.");
+    })
+    .then((wrapper) => {
+        // allorigins proxy pakuje originalni odgovor u string unutar "contents" polja
+        const data = JSON.parse(wrapper.contents);
+
         prikaziKartice(data.slice(0, 15));
         prikaziTabelu(data.slice(0, 10));
     })
     .catch((error) => {
         prikaziGresku();
-        console.error(error);
+        console.error("Greška pri povlačenju API podataka:", error);
     });
 
 function prikaziKartice(podaci) {
