@@ -18,7 +18,7 @@
                     alt="PhishGuard logo"
                     width="32"
                 />
-                <a class="navbar-brand" href="/html/index.html"> PhishGuard</a>
+                <a class="navbar-brand" href="index.html"> PhishGuard</a>
                 <button
                     class="navbar-toggler"
                     type="button"
@@ -31,39 +31,60 @@
                 <div class="collapse navbar-collapse" id="navMain">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" href="/html/index.html"
+                            <a
+                                class="nav-link active"
+                                href="index.html "
+                                data-i18n="nav.home"
                                 >Home</a
                             >
                         </li>
                         <li class="nav-item">
                             <a
                                 class="nav-link"
-                                href="/html/what-is-phishing.html"
+                                href="what-is-phishing.html"
+                                data-i18n="nav.whatIs"
                                 >What is Phishing</a
                             >
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/html/real-examples.html"
+                            <a
+                                class="nav-link"
+                                href="real-examples.html"
+                                data-i18n="nav.examples"
                                 >Real Examples</a
                             >
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/html/api-data.html"
+                            <a
+                                class="nav-link"
+                                href="api-data.html"
+                                data-i18n="nav.api"
                                 >API Data</a
                             >
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/html/prevention.html"
+                            <a
+                                class="nav-link"
+                                href="prevention.html"
+                                data-i18n="nav.prevention"
                                 >Prevention</a
                             >
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/html/contact.html"
+                            <a
+                                class="nav-link"
+                                href="contact.html"
+                                data-i18n="nav.contact"
                                 >Contact</a
                             >
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="login.html">Login</a>
+                            <a
+                                class="nav-link"
+                                href="login.html"
+                                data-i18n="nav.login"
+                                >Login</a
+                            >
                         </li>
                     </ul>
 
@@ -80,7 +101,7 @@
 
         <main class="container py-4">
             <div class="hero mb-4">
-                <span class="badge badge-soft mb-2"
+                <span class="badge badge-soft mb-2" data-i18n="home.kicker"
                     >Edukacija • Bezbednost • Prevencija</span
                 >
                 <h1 class="display-6 mb-2" data-i18n="home.title">
@@ -93,17 +114,20 @@
                 <div class="d-flex flex-wrap gap-2">
                     <a
                         class="btn btn-primary"
-                        href="/html/what-is-phishing.html"
+                        href="what-is-phishing.html"
+                        data-i18n="home.ctaLearn"
                         >Kreni sa učenjem</a
                     >
                     <a
                         class="btn btn-outline-light"
-                        href="/html/prevention.html"
+                        href="prevention.html"
+                        data-i18n="home.ctaPrevention"
                         >Lista prevencije</a
                     >
                     <a
                         class="btn btn-outline-light"
-                        href="/html/real-examples.html"
+                        href="real-examples.html"
+                        data-i18n="home.ctaExamples"
                         >Vidi primere</a
                     >
                 </div>
@@ -111,14 +135,15 @@
 
             <div class="row g-3">
                 <div class="col-md-4">
-                    <div class="card p-4 h-100">
+                    <div class="card p-4 h-100" data-i18n="home.card1Title">
                         <h5>Šta je phishing?</h5>
-                        <p class="text-muted">
+                        <p class="text-muted" data-i18n="home.card1Text">
                             Objašnjenje, vrste napada i zašto ljudi “nasednu”.
                         </p>
                         <a
                             class="btn btn-sm btn-primary"
-                            href="/html/what-is-phishing.html"
+                            href="what-is-phishing.html"
+                            data-i18n="common.open"
                             >Otvori</a
                         >
                     </div>
@@ -132,7 +157,7 @@
                         </p>
                         <a
                             class="btn btn-sm btn-primary"
-                            href="/html/real-examples.html"
+                            href="real-examples.html"
                             >Otvori</a
                         >
                     </div>
@@ -144,9 +169,7 @@
                             Ovde mozete pogledati najnovije informacije o
                             phishing napadima.
                         </p>
-                        <a
-                            class="btn btn-sm btn-primary"
-                            href="/html/api-data.html"
+                        <a class="btn btn-sm btn-primary" href="api-data.html"
                             >Otvori</a
                         >
                     </div>
@@ -154,10 +177,13 @@
             </div>
 
             <div class="d-flex justify-content-between mt-3">
-                <span class="text-muted">← Prethodna</span>
+                <span class="text-muted" data-i18n="common.prev"
+                    >← Prethodna</span
+                >
                 <a
                     class="text-decoration-none"
-                    href="/html/what-is-phishing.html"
+                    href="what-is-phishing.html"
+                    data-i18n="common.next"
                     >Sledeća →</a
                 >
             </div>
@@ -169,22 +195,27 @@
             >
                 <div>
                     <div class="footer-brand">PhishGuard</div>
-                    <div class="text-muted">
+                    <div class="text-muted" data-i18n="common.footerTagline">
                         Edukativni sajt o phishing napadima
                     </div>
                 </div>
 
                 <div class="footer-links">
-                    <a href="/html/contact.html">Kontakt</a>
-                    <a href="/html/about-us.html">About us</a>
-                    <a href="/html/api-data.html">API</a>
-                    <a href="/html/login.html">Login</a>
+                    <a href="contact.html" data-i18n="footer.contact"
+                        >Kontakt</a
+                    >
+                    <!-- <a href="about-us.html" data-i18n="footer.about"
+                        >About us</a
+                    > -->
+                    <a href="api-data.html" data-i18n="footer.api">API</a>
+                    <a href="login.html" data-i18n="footer.login">Login</a>
                 </div>
             </div>
 
             <div class="container footer-bottom">© 2026 PhishGuard</div>
         </footer>
     </body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
     <script src="scripts/script.js"></script>
 </html>

@@ -117,7 +117,6 @@ a:hover {
     margin-left: 0.35rem;
 }
 
-/* da se maknw dugme */
 #lang-en:checked ~ .page .sr {
     display: none;
 }
@@ -125,7 +124,6 @@ a:hover {
     display: none;
 }
 
-/* da vidimo koji jezik koristimo */
 #lang-en:checked ~ .page .btn-lang-en {
     background: rgba(13, 110, 253, 0.25);
     border-color: rgba(13, 110, 253, 0.45);
@@ -135,7 +133,6 @@ a:hover {
     border-color: rgba(13, 110, 253, 0.45);
 }
 
-/* form*/
 .form-control,
 .form-select {
     background: rgba(255, 255, 255, 0.06);
